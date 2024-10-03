@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+   "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+    
+    
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Set URL -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/authorbook</property>
+
+        <!-- Set User Name -->
+        <property name="hibernate.connection.username">postgres</property>
+
+        <!-- Set Password -->
+        <property name="hibernate.connection.password">1234</property>
+
+        <!-- Set Driver Name -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Optional: Auto-generate schema -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+      
+
+    </session-factory>
+</hibernate-configuration>
